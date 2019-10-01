@@ -2,8 +2,8 @@ Requisitos
 
 - Powershell Core
 - Chocolatey
-- NodeJS
-- Yarn
+- NodeJS 10.16.3
+- Yarn 1.19.0
 - VS Code
 
 Extensões do VS Code:
