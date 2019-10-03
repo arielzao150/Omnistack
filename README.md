@@ -23,7 +23,7 @@ Extensões do VS Code:
 
   
 
-Example of VSCode Settings JSON
+Examplo do JSON de configurações do VSCode
   
 
     {
@@ -55,6 +55,8 @@ yarn.lock gera um cache das dependências instaladas, ou seja, não precisamos n
 Já a pasta node_modules contém o código das dependências do projeto, e podemos achar o express, e todas as suas dependências dentro desta pasta.
 
 Agora vamos criar uma pasta chamada "src" e dentro dela o arquivo "server.js", que será usado para inicializar o servidor.
+
+## Rodando o projeto
 
 Para executar a aplicação, execute:
 
