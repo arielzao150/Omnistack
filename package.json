@@ -5,7 +5,13 @@
   "repository": "https://github.com/arielzao150/Omnistack.git",
   "author": "Ariel Vitor Molina <arielvmol@terra.com.br>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
   }
 }

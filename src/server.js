@@ -5,8 +5,18 @@ const express = require('express');
 const app = express();
 
 // Define as rotas
+// GET, POST, PUT, DELETE
+
 app.get('/', (req, res) => { // request e response
-    return res.json('Hello world');
+    return res.json({ message: "Hello World" }); // Objeto JSON
+});
+
+app.post('/users', (req, res) => {
+    return res.json({ message: "top" });
+});
+
+app.get('/users', (req, res) => {
+    return res.json({ idade: req.query.idade });
 });
 
 // Define a porta por onde a aplicação será acessada

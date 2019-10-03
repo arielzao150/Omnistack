@@ -5,6 +5,7 @@
 - NodeJS 10.16.3
 - Yarn 1.19.0
 - VS Code
+- Insomnia (64 bits) ou Postman (32 bits)
   
 
 Extensões do VS Code:
@@ -53,3 +54,21 @@ Agora vamos criar uma pasta chamada "src" e dentro dela o arquivo "server.js", q
 Para executar a aplicação, execute:
 
     node src/server.js
+
+Se fizermos alguma mudança no projeto, o node não irá reiniciar com as novas mudanças automaticamente. Para que isso aconteça, primeiro instale o Nodemon com
+
+    yarn add nodemon -D
+
+O parâmetro "-D" indica que a dependência será somente para ambientes de Desenvolvimento, ou seja, não irá para o servidor em produção.
+
+Em seguida adicione o seguinte trecho de código ao arquivo package.json:
+
+    "scripts": {
+        "dev": "nodemon src/server.js"
+    },
+
+Então, para executar o projeto, use no terminal:
+
+    yarn dev
+
+parei em 23:00 aula 2
