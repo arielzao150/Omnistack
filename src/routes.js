@@ -1,5 +1,6 @@
 const express = require('express');
 
+const SessionController = require('./controllers/SessionController');
 const routes = express.Router();
 
 // Define as rotas
@@ -27,5 +28,8 @@ routes.post('/users', (req, res) => {
 routes.post('/test-route', (req, res) => {
     return res.json(req.body);
 });
+
+// Redireciona para a Controller
+routes.post('/sessions', SessionController.store);
 
 module.exports = routes;

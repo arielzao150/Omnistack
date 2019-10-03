@@ -82,6 +82,12 @@ Então, para executar o projeto, use no terminal:
 
 Até agora as rotas estavam sendo criadas na server.js, no entanto, conforme o sistema vai progredindo, este arquivo ficaria muito grande. Por isso, vamos criar o arquivo routes.js.
 
+Insomnia environment:
+
+    {
+        "base_url": "http://localhost:3333"
+    }
+
 ## Conectando a um Banco de Dados
 
 Estaremos utilizando o MongoDB Atlas. Primeiramente crie um cluster novo e, na aba Database Access, crie um usuário com permissões de Read e Write. Em seguida autorize o acesso ao banco do seu IP na aba Network Access. Depois de tudo isso, clique em CONNECT no seu cluster e escolha a opção "Connect Your Application" e copie a connection string.
