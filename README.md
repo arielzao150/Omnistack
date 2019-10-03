@@ -98,4 +98,4 @@ Instale Mongoose no seu projeto com:
 
     yarn add mongoose
 
-parei em 53:00 aula 2
+parei em 57:00 aula 2

@@ -1,6 +1,8 @@
 const express = require('express');
 
 const SessionController = require('./controllers/SessionController');
+const SpotController = require('./controllers/SpotController');
+
 const routes = express.Router();
 
 // Define as rotas
@@ -31,5 +33,7 @@ routes.post('/test-route', (req, res) => {
 
 // Redireciona para a Controller
 routes.post('/sessions', SessionController.store);
+
+routes.post('/spots', SpotController.store);
 
 module.exports = routes;
