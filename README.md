@@ -78,4 +78,8 @@ Então, para executar o projeto, use no terminal:
 
     yarn dev
 
+## Criando rotas no projeto
+
+Até agora as rotas estavam sendo criadas na server.js, no entanto, conforme o sistema vai progredindo, este arquivo ficaria muito grande. Por isso, vamos criar o arquivo routes.js.
+
 parei em 23:00 aula 2

@@ -1,23 +1,15 @@
 // Importando o Express
 const express = require('express');
+const routes = require('./routes');
 
 // Criando a aplicação
 const app = express();
 
-// Define as rotas
-// GET, POST, PUT, DELETE
+// Habilita o uso de JSON para as requisições
+app.use(express.json());
 
-app.get('/', (req, res) => { // request e response
-    return res.json({ message: "Hello World" }); // Objeto JSON
-});
-
-app.post('/users', (req, res) => {
-    return res.json({ message: "top" });
-});
-
-app.get('/users', (req, res) => {
-    return res.json({ idade: req.query.idade });
-});
+// Utiliza as rotas do outro arquivo
+app.use(routes);
 
 // Define a porta por onde a aplicação será acessada
 app.listen(3333);
