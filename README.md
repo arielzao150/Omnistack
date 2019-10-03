@@ -1,3 +1,5 @@
+Este repositório é baseado na semana OmniStack 9.0 da Rocketseat
+
 # Sumário
 
  - [Requisitos](https://github.com/arielzao150/Omnistack#requisitos)
@@ -96,4 +98,4 @@ Instale Mongoose no seu projeto com:
 
     yarn add mongoose
 
-parei em 23:00 aula 2
+parei em 53:00 aula 2
