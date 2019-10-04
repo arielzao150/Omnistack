@@ -98,4 +98,10 @@ Instale Mongoose no seu projeto com:
 
     yarn add mongoose
 
+## Enviando imagens
+
+Instalar:
+
+    yarn add multer
+    
 parei em 57:00 aula 2

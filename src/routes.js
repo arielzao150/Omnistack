@@ -1,9 +1,14 @@
 const express = require('express');
+const multer = require('multer');
+const uploadConfig = require('./config/upload');
 
 const SessionController = require('./controllers/SessionController');
 const SpotController = require('./controllers/SpotController');
+const BookingController = require('./controllers/BookingController');
+const DashboardController = require('./controllers/DashboardController');
 
 const routes = express.Router();
+const upload = multer(uploadConfig);
 
 // Define as rotas
 // GET, POST, PUT, DELETE
@@ -34,6 +39,10 @@ routes.post('/test-route', (req, res) => {
 // Redireciona para a Controller
 routes.post('/sessions', SessionController.store);
 
-routes.post('/spots', SpotController.store);
+routes.get('/spots', SpotController.index);
+routes.post('/spots', upload.single('thumbnail'), SpotController.store);
+routes.post('/spots/:id/bookings', BookingController.store);
+
+routes.get('/dashboard', DashboardController.show);
 
 module.exports = routes;
