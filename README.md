@@ -4,6 +4,7 @@ Este repositório é baseado na semana OmniStack 9.0 da Rocketseat
 
  - [Requisitos](https://github.com/arielzao150/Omnistack#requisitos)
  - [Criando a base da aplicação](https://github.com/arielzao150/Omnistack#criando-a-base-da-aplica%C3%A7%C3%A3o)
+ - [Construindo a interface web]
 
 # Requisitos
 
@@ -103,5 +104,36 @@ Instale Mongoose no seu projeto com:
 Instalar:
 
     yarn add multer
-    
-parei em 57:00 aula 2
+
+# Construindo a interface web
+
+Para criar um novo projeto React:
+
+    yarn create react-app frontend
+
+Deixe o backend rodando e abra a pasta "frontend" dentro do VS Code.
+
+Rode:
+
+    yarn start
+
+Dentro da pasta public, delete os arquivos favicon.ico, logo192.png, logo512.png, manifest.json e robots.txt. Já no arquivo index.html que sobrou, deixe somente as tags meta com charset e com name e content.
+
+Dentro da pasta src, deletar os arquivos logo.svg, serviceWorker.js, index.css e App.test.js.
+
+## Componentização
+
+Um componente é uma função.
+
+## Configurando Emmet no VS Code
+
+No arquivo seetings.json do VS Code, adicione as linhas a seguir.
+
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx",
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+    },
+
+parei em 26:00 aula 3
